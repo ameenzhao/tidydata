@@ -64,6 +64,8 @@ all.data[1:3, 1:5] # row 1:3, column 1:5
 # 2       1 STANDING       0.2784188     -0.01641057      -0.1235202
 # 3       1 STANDING       0.2796531     -0.01946716      -0.1134617
 ## The dimension of 'all.data' is 10299 rows & 81 columns
+write.table(all.data, file = 'all.data.txt', quote = F) # save the data 'all.data.txt'
+
 
 ## Create a tidy data set with the average of each variable for each activity & subject
 # Re-load activity data sets (train.label & test.label) replacing characters in all.data
